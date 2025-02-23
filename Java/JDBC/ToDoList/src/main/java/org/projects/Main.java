@@ -40,14 +40,15 @@ public class Main {
                         break;
                     case 5:
                         start = false;
+                        System.out.println("Exiting application...");
                         break;
                     default:
-                        System.out.println("Invalid choice! Please try again.");
+                        System.out.println("Invalid number! Please try again.");
                 }
             } catch (SQLException e) {
                 System.err.println("Database error: " + e.getMessage());
             } catch (ClassNotFoundException e) {
-                System.out.println("Connection failed. Check the console output for the error: " + e.getMessage());
+                System.out.println("Connection failed!: " + e.getMessage());
             }
         }
         scanner.close();

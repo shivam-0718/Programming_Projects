@@ -1,8 +1,6 @@
 package org.projects;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class DBConnection {
     static {
@@ -19,6 +17,17 @@ public class DBConnection {
         final String USERNAME = "shivam";
         final String PASSWORD = "Shivam18";
         return DriverManager.getConnection(URL, USERNAME, PASSWORD);
+    }
+
+    public static void closeConnection(Statement statement, Connection connection) throws SQLException {
+        statement.close();
+        connection.close();
+    }
+
+    public static void closeConnection(ResultSet resultSet, Statement statement, Connection connection) throws SQLException {
+        resultSet.close();
+        statement.close();
+        connection.close();
     }
 
 

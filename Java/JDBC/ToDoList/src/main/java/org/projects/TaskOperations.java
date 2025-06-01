@@ -17,27 +17,30 @@ public class TaskOperations {
         String description = sc.nextLine();
 
         Connection connection = DBConnection.getConnection();
-        System.out.println("Connection established successfully!");
-        String query = "INSERT INTO projects.todolist (description, status) VALUES (?, 'pending')";
 
+        String query = "INSERT INTO projects.todolist (description, status) VALUES (?, 'pending')";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setString(1, description);
+
         int rows = statement.executeUpdate();
         if(rows > 0) {
             System.out.println("Task added successfully!");
         } else {
             System.out.println("Invalid! Enter proper short description");
         }
+
         DBConnection.closeConnection(statement, connection);
     }
 
     public List<Task> showTasks() throws SQLException, ClassNotFoundException {
         List<Task> tasks = new ArrayList<>();
         String query = "select * from projects.todolist;";
+
         Connection connection = DBConnection.getConnection();
-        System.out.println("Connection established successfully!");
+
         Statement statement = connection.createStatement();
         ResultSet result = statement.executeQuery(query);
+
         while(result.next()){
             int id = (result.getInt("id"));
             String description = (result.getString("description"));
@@ -57,12 +60,12 @@ public class TaskOperations {
         String newStatus = sc.nextLine();
 
         Connection connection = DBConnection.getConnection();
-        System.out.println("Connection established successfully!");
         String query = "UPDATE projects.todolist SET status = ? WHERE id = ?";
 
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setString(1, newStatus);
         statement.setInt(2, id);
+
         int rows = statement.executeUpdate();
         if(rows > 0) {
             System.out.println("Task added successfully!");
@@ -79,7 +82,7 @@ public class TaskOperations {
         int id = sc.nextInt();
 
         Connection connection = DBConnection.getConnection();
-        System.out.println("Connection established successfully!");
+
         String query = "DELETE FROM projects.todolist WHERE id = ?";
         PreparedStatement statement =connection.prepareStatement(query);
         statement.setInt(1, id);

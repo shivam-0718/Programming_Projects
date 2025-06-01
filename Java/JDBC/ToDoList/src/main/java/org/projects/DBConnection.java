@@ -10,6 +10,7 @@ public class DBConnection {
     static {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
+            System.out.println("Connection established successfully!");
         } catch (ClassNotFoundException e) {
             System.out.println("This is not a correct JDBC Driver. Check it again!");
             e.printStackTrace();

@@ -14,7 +14,7 @@ Each project listed below links directly to its folder in the repository: [shiva
 
 | 📁 Project Folder | 📄 Description | 🛠️ Technologies Used |
 |------------------|----------------|-----------------------|
-| [`jdbc/`](https://github.com/shivam-0718/Programming_Projects/tree/main/Java/jdbc) | Demonstrates how to perform database operations using **JDBC**. Includes basic DB connectivity, SQL execution, and CRUD operations. | Core Java, JDBC, MySQL |
+| [`jdbc/`](https://github.com/shivam-0718/Programming_Projects/tree/main/Java/JDBC) | Demonstrates how to perform database operations using **JDBC**. Includes basic DB connectivity, SQL execution, and CRUD operations. | Core Java, JDBC, MySQL |
 | [`Hibernate/`](https://github.com/shivam-0718/Programming_Projects/tree/main/Java/Hibernate) | Explains the use of **Hibernate ORM** with entity mapping, annotations, and session management to simplify database interaction. | Core Java, Hibernate, MySQL |
 
 > 🔧 *Additional Java projects leveraging **Spring Boot**, **Spring MVC**, **Spring Data JPA**, and **Microservices** will be added regularly as the learning journey progresses.*

@@ -56,6 +56,7 @@ public class TaskOperations {
         System.out.println("Enter Task ID: ");
         int id = sc.nextInt();
         sc.nextLine();
+
         System.out.println("Enter new status(completed/pending): ");
         String newStatus = sc.nextLine();
 
@@ -72,8 +73,8 @@ public class TaskOperations {
         } else {
             System.out.println("Wrong Task ID");
         }
-        statement.close();
-        connection.close();
+
+        DBConnection.closeConnection(statement, connection);
     }
 
     public void deleteTask() throws SQLException, ClassNotFoundException {
@@ -93,7 +94,7 @@ public class TaskOperations {
         } else {
             System.out.println("Wrong Task ID");
         }
-        statement.close();
-        connection.close();
+
+        DBConnection.closeConnection(statement, connection);
     }
 }

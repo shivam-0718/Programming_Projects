@@ -49,6 +49,8 @@ public class Main {
                 System.err.println("Database error: " + e.getMessage());
             } catch (ClassNotFoundException e) {
                 System.out.println("Connection failed!: " + e.getMessage());
+            } catch (Exception e) {
+                System.out.println("Unknown exception!: " + e.getMessage());
             }
         }
         scanner.close();

@@ -28,8 +28,7 @@ public class TaskOperations {
         } else {
             System.out.println("Invalid! Enter proper short description");
         }
-        statement.close();
-        connection.close();
+        DBConnection.closeConnection(statement, connection);
     }
 
     public List<Task> showTasks() throws SQLException, ClassNotFoundException {
@@ -45,9 +44,7 @@ public class TaskOperations {
             String status = (result.getString("status"));
             tasks.add(new Task(id, description, status));
         }
-        result.close();
-        statement.close();
-        connection.close();
+        DBConnection.closeConnection(result, statement, connection);;
         return tasks;
     }
 

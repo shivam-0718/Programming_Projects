@@ -14,7 +14,12 @@ public class DBConnection {
         }
     }
 
-
+    public static Connection getConnection() throws SQLException {
+        final String URL = "jdbc:mysql://localhost:3306/projects";
+        final String USERNAME = "shivam";
+        final String PASSWORD = "Shivam18";
+        return DriverManager.getConnection(URL, USERNAME, PASSWORD);
+    }
 
 
 }

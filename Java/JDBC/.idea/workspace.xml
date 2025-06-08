@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd6740d5-c419-4640-b7a1-e2eff742be61" name="Changes" comment="">
+    <list default="true" id="fd6740d5-c419-4640-b7a1-e2eff742be61" name="Changes" comment="Using closeConnection() in updateTask() and deleteTask().">
+      <change afterPath="$PROJECT_DIR$/ToDoList/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,16 +16,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "shivam-0718"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;shivam-0718&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/shivam-0718/Programming_Projects.git",
-    "accountId": "70be661a-3885-400f-8416-35c6775dfd12"
+    "accountId": "6361d0f2-e126-4011-a2c6-430486fee825"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -35,16 +36,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Shivam/Programming_Practice/JavaSpringBoot/JDBC&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/D_Drive/ShivamV/Shivam/Programming_Practice/JavaFullStack/Programming_Projects/Java/JDBC"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.projects.Main" />
@@ -74,6 +75,91 @@
       <option name="presentableId" value="Default" />
       <updated>1740306065382</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created static block for loading and registering driver.">
+      <option name="closed" value="true" />
+      <created>1748794799838</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748794799838</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Modified getConnection() for returning Connection.">
+      <option name="closed" value="true" />
+      <created>1748794829061</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748794829061</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added closeConnection() and it's overloaded method to close connections.">
+      <option name="closed" value="true" />
+      <created>1748794920571</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748794920571</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Modified import statements.">
+      <option name="closed" value="true" />
+      <created>1748794967759</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748794967759</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added catch block for Exception as well.">
+      <option name="closed" value="true" />
+      <created>1748795351080</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748795351080</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Used closeConnection() in addTask() and showTasks().">
+      <option name="closed" value="true" />
+      <created>1748795446988</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748795446988</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added a string for connection establishment.">
+      <option name="closed" value="true" />
+      <created>1748795759734</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748795759734</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Removed redundant statements.">
+      <option name="closed" value="true" />
+      <created>1748795829199</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1748795829199</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Using closeConnection() in updateTask() and deleteTask().">
+      <option name="closed" value="true" />
+      <created>1748796073330</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1748796073330</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created static block for loading and registering driver." />
+    <MESSAGE value="Modified getConnection() for returning Connection." />
+    <MESSAGE value="Added closeConnection() and it's overloaded method to close connections." />
+    <MESSAGE value="Modified import statements." />
+    <MESSAGE value="Added catch block for Exception as well." />
+    <MESSAGE value="Used closeConnection() in addTask() and showTasks()." />
+    <MESSAGE value="Added a string for connection establishment." />
+    <MESSAGE value="Removed redundant statements." />
+    <MESSAGE value="Using closeConnection() in updateTask() and deleteTask()." />
+    <option name="LAST_COMMIT_MESSAGE" value="Using closeConnection() in updateTask() and deleteTask()." />
   </component>
 </project>

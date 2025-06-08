@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            border: 1px solid #e8e8e8;
+        }
+
+        h2 {
+            margin-bottom: 35px;
+            font-size: 28px;
+            text-align: center;
+            color: #2c3e50;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #555;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 15px 16px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: all 0.2s ease;
+            background: #fafafa;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #3498db;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 16px;
+            background: #3498db;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 15px;
+        }
+
+        input[type="submit"]:hover {
+            background: #2980b9;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+        }
+
+        input[type="submit"]:active {
+            transform: translateY(0);
+        }
+
+        /* Professional subtle animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-container {
+            animation: fadeIn 0.4s ease;
+        }
+
+        /* Clean focus indicator */
+        .form-group {
+            position: relative;
+        }
+
+        input:focus {
+            border-color: #3498db;
+        }
+
+        /* Required field indicator */
+        input[required] + .required-indicator::after {
+            content: '*';
+            color: #e74c3c;
+            margin-left: 4px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 40px 25px;
+                margin: 10px;
+            }
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+        }
+
+        /* Professional styling touches */
+        .form-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 4px;
+            background: #3498db;
+            border-radius: 0 0 4px 4px;
+        }
+
+        .form-container {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <form action="./register" method="POST">
+        <h2>User Registration</h2>
+
+        <div class="form-group">
+            <label for="uname">Name</label>
+            <input type="text" id="uname" name="uname" maxlength="255" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" maxlength="255" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" maxlength="255" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ucity">City</label>
+            <input type="text" id="ucity" name="ucity" maxlength="255">
+        </div>
+
+        <input type="submit" value="Signup">
+    </form>
+</div>
+</body>
+</html>

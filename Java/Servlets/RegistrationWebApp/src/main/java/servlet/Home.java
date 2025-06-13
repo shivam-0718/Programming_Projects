@@ -13,10 +13,10 @@ public class Home extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) {
         try {
-            // Redirect to the registration form
             response.sendRedirect(request.getContextPath() + "/index.html");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 }
+

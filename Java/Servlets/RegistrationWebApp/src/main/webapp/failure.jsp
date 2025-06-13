@@ -62,8 +62,8 @@
         <h2>Sorry <%= name %>, we could not create your account</h2>
         <p class="message">Please check your details and try again.</p>
         <div>
-            <a href="register.jsp" class="retry-link">Try Again</a>
-            <a href="index.jsp" class="back-link">Go Home</a>
+            <a href="index.html" class="retry-link">Try Again</a>
+            <a href="login.jsp" class="back-link">Login</a>
         </div>
     </div>
 </body>
